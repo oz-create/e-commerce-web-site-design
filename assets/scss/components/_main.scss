@@ -1,0 +1,241 @@
+.carousel {
+  margin-top: 6rem;
+
+  .caption {
+    color: #fff;
+    text-shadow: rgba($color: #000000, $alpha: 1) 3px 3px 3px;
+  }
+}
+
+.row {
+  padding: 0;
+  --bs-gutter-x: 0;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  &__1 {
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        position: absolute;
+        cursor: pointer;
+        margin-bottom: 5rem;
+        padding: 10px;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        transition: background-color 1s;
+
+        &:hover {
+          background-color: rgba($color: #fff, $alpha: 1);
+        }
+      }
+    }
+  }
+}
+
+.banner-2 {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+
+  background-color: var(--white-color);
+
+  .col-sm {
+    text-align: center;
+
+    &:not(last-of-type) {
+      border-right: 2px solid #f2f2f2;
+    }
+
+    i {
+      font-size: 50px;
+      padding-bottom: 40px;
+      transition: transform ease 1s;
+
+      &:hover {
+        transform: rotateY(150deg);
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+}
+
+.shop {
+  .content,
+  .content2,
+  .content3 {
+    &__list-header {
+      display: flex;
+      justify-content: space-between;
+
+      .product-list-icons {
+        cursor: pointer;
+        color: var(--black-color);
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .shop-img {
+    overflow: hidden;
+    img {
+      transform: scale(1);
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  .row {
+    margin: 2.5px;
+  }
+
+  .col,
+  .col-sm,
+  .col-md {
+    margin: 5px;
+  }
+
+  .products {
+    .row {
+      div {
+        div {
+          text-align: center;
+          background-color: var(--light-gray);
+          position: relative;
+
+          &:hover img {
+            opacity: 0.3;
+          }
+
+          &:hover .hover-icons {
+            display: block;
+          }
+
+          img {
+            cursor: pointer;
+            background-color: #efefef;
+            transition: all ease 1s;
+          }
+
+          .hover-icons {
+            position: absolute;
+            background: transparent;
+            bottom: 45%;
+            display: none;
+
+            &:hover {
+              display: block;
+            }
+
+            i {
+              padding: 7%;
+              margin: 5%;
+              font-size: 170%;
+              cursor: pointer;
+              transition: all 1s;
+              background-color: rgba($color: #fff, $alpha: 0.8);
+              border-radius: 50px;
+
+              &:hover {
+                color: salmon;
+                background-color: rgba($color: #fff, $alpha: 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-3 {
+  div {
+    overflow: hidden;
+    margin: 10px;
+    img {
+      transition: transform 0.5s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.banner-4 {
+  display: flex;
+  align-items: center;
+
+  &__content {
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  &__img {
+    overflow: hidden;
+   
+    img {
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.video-container {
+  position: relative;
+}
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+.overlay-desc {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: salmon;
+    font-size: 5vw;
+    text-align: center;
+  }
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}

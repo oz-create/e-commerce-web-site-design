@@ -1,0 +1,19 @@
+@media screen and (max-width:576px){
+          .basket-page__products__header{
+                    display: none;
+          }
+
+          .basket-page{
+
+                    &__banner{
+                              &__text{
+                                        div{
+                                                  position: absolute;
+                                                  text-align: center;
+                                                  bottom: 0;
+                                        }
+                                  
+                              }
+                    }
+          }
+}

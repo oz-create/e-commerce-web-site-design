@@ -1,0 +1,20 @@
+@media screen and (max-width:768px) {
+          .buy-page{
+                    &__products{
+                              display: none;
+                    }
+
+                    &__form{
+                              height: calc(100vh - (6rem + 44px));
+                    }
+          }
+          
+}
+@media screen and (min-width:768px) {
+          .buy-page{
+                    &__products-mobil{
+                              display: none;
+                    }
+          }
+          
+}

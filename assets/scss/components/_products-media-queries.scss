@@ -1,0 +1,28 @@
+@media screen and (max-width:768px) {
+        .col-3{
+                  display: none;
+        }
+        .shop-page{ 
+
+          &__banner{
+                    &__text{
+                              div{
+                                        bottom: 0;
+                              }
+                        
+                    }
+          }
+
+          }
+          .color{
+                    width: 100%;
+          }
+}
+
+@media screen and (min-width:768px) {
+         .filter-mobil{
+                   display: none;
+         }
+  
+  }
+  

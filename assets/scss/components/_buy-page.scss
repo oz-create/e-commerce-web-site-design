@@ -1,0 +1,53 @@
+.buy-page{
+          position: relative;
+          top: 6rem;
+          &__form{
+                    background-color: var(--white-color);
+                    padding-top: 2.5rem;
+                    height: calc(100vh - 6rem);
+          }
+
+          &__products-mobil{
+          
+                    .accordion-body{
+                              background-color: var(--light-color);
+                    }
+                    .accordion-button{
+                              background-color: var(--light-gray);
+                    }
+          }
+
+          &__products{
+                    margin: 2rem 0;
+          }
+
+          .product{
+                    display: flex; 
+                    align-items: center;
+      
+                  &__img{
+                      width: 15%;
+                  }
+                
+                  &__text{
+                      flex-grow: 2;
+                      display: flex;
+                      justify-content: space-between;
+         
+                      p{
+                           margin: 0 10px;
+                      }
+                  }
+
+                  &__total{
+                            display: flex;
+                            justify-content: space-between;
+                  }
+              }
+
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,250 @@
+@media screen and (max-width: 1100px){
+          
+          html{
+                    font-size: 16px;
+          }
+
+         .nav{
+                   
+                    &__logo{
+                              width: 150px;
+                    }
+
+                    &__icons{
+                              margin-right: 50px;
+                    }
+
+                    &__list{
+                             position: fixed;
+                             top: 0;
+                             left: 0;
+                             height: 100vh;
+                             display: none;
+                             flex-direction: column;
+                             align-items: initial;
+                             background-color: var(--white-color);
+                             z-index: 1000;
+
+                             li:hover > .sub-menu{
+                                       opacity: 1;
+                                       visibility: visible;
+                                       max-height: initial;
+                             }
+
+                             li{
+                                       line-height: 5rem;
+                             }
+                   }
+
+                   .sub-menu{
+                             position: initial;
+                             border: 3px solid transparent;
+                             border-left-color: salmon;
+                             margin-left: 1rem;
+                             max-height: 0;
+
+                             &::before{
+                                       display: none;
+                             }
+                   }
+
+                   .menu-icons{
+                             display: block;
+
+                             .bx-x{
+                             display: none;
+                            }
+                   }  
+
+                   
+         } 
+
+         .nav.active .bx-x{
+          display: block;
+           }
+
+          .nav.active .bx-menu{
+           display: none;
+           }
+
+          .nav.active .nav__list{
+          display: flex;
+           }
+
+           .banner-2{
+                    .col-sm{
+                              .bx{
+                                        font-size: 30px;
+                                        padding-bottom: 20px;
+                              } 
+                    }
+          }
+
+          .video__text{
+            .video-h{
+                font-size: 30px;
+                
+            }
+            .video-p{
+                font-size: 15px;
+            }
+            
+        }
+
+}
+
+@media screen and (max-width: 852px){
+
+          .nav{
+                     &__logo{
+                               width: 130px;
+                    }
+
+                    &__icons{
+                              a{
+                                        font-size: 25px;
+                                        padding-right: 10px;
+                              }              
+                    }
+          }
+
+          .carousel-caption{
+                    h1{
+                       font-size: 22px;      
+                    }
+
+                    h4{
+                       font-size: 18px; 
+                    }
+
+                    .btn{
+                              font-size: 12px;
+                    }
+          }
+
+          .banner__1 {
+                    p{
+                              font-size: 12px;
+                    }
+          }  
+
+         
+            .video-h{
+                font-size: 20px;
+                
+            }
+            .video-p{
+                font-size: 10px;
+            }
+         
+}
+
+
+
+@media screen and (max-width: 576px){
+          html{
+                    font-size: 13px;
+          }
+          .nav{
+                    &__logo{
+                              width: 110px;
+                    }
+
+                    
+                    &__icons{
+                              margin-right: 40px;
+                              a{
+                                        font-size: 20px;
+                                        padding-right: 5px;
+                              }              
+                    }
+          }
+
+          .carousel-caption{
+                    h1{
+                              font-size: 16px; 
+                                
+                    }
+          
+                    h4{
+                              font-size: 13px; 
+                          
+                    }
+          
+                    .btn{
+                              font-size: 9px;
+                    }
+                              
+          }
+
+          .banner__1 {
+                    p{
+                              font-size: 10px;
+                    }
+          }
+          
+          .banner-2{
+                    .col-sm{
+                              .bx{
+                                        font-size: 30px;
+                                         padding-bottom: 20px;
+                              } 
+                    }
+          }   
+
+          .content__list{
+                    display: none;
+          }
+
+          .product-list-icons{
+                    display: block;
+
+                    .bx-minus-circle{
+                    display: none;
+                   }
+          }  
+
+            .content.active .bx-minus-circle{
+                    display: block;
+                     }
+          
+            .content.active .bx-plus-circle{
+                     display: none;
+                     }
+          
+            .content.active .content__list{
+                    display: flex;
+                     }
+
+}
+
+@media screen and (max-width: 423px){
+          .carousel-caption{
+                    h1{
+                              font-size: 12px;       
+                    }
+          
+                    h4{
+                              font-size: 9px; 
+                    }
+          
+                    .btn{
+                              font-size: 7px;
+                    }
+                              
+          }
+
+          .banner__1 {
+                    p{
+                              font-size: 8px;
+                    }
+          }
+
+}
+
+@media screen and (min-width: 576px){
+          .product-list-icons{
+                    display: none;
+          }
+
+}

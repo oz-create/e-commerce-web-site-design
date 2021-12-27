@@ -1,0 +1,104 @@
+.favorites-page{
+          position: relative;
+          top: 6rem;
+
+          &__banner{
+                    position: relative;
+                    &__text{
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+
+                              div{
+                                        position: absolute;
+                                        text-align: center;
+                                        bottom: 30%;
+                              }
+                        
+                    }
+          }
+
+          &__products{
+                  padding: 10px;
+
+                    &__header{
+                         
+                              background-color: var(--light-gray);
+                              border: solid 1px rgb(218, 218, 218);
+                              padding: 10px;
+
+                              div{
+                                    display: flex;
+                                    justify-content: center;
+                              }
+                    }
+
+                    &__product{
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              border:solid 1px rgb(218, 218, 218);
+                              padding: 5px;
+
+                              &__top{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                   .delete-icon{
+                                          width: 15%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                   }
+
+                                   .image{
+                                          width: 35%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                   }
+
+                                   .image-name{
+                                          width: 50%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                   }
+                              }
+
+                             &__bottom{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    div{
+                                          width: 50%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                    }
+                             }
+ 
+                    }
+
+                  .sayac{
+                        display: flex;
+                        align-items: center;
+                        margin: 15px 0px;
+
+                        button{
+                              padding:5px 10px;
+                              border: 1px solid rgb(218, 218, 218);
+
+                        }
+                        p{
+                              padding: 5px 15px;
+                              border: 1px solid rgb(218, 218, 218) ;
+
+                        }
+                  
+                  }
+          }
+}
